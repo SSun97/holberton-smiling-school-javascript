@@ -1,0 +1,594 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+@font-face {
+    font-family: 'holberton_school-icon';
+    src:  url('fonts/holberton_school-icon.eot?sq4eq4');
+    src:  url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+      url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+      url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+      url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'holberton_school-icon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .holberton_school-icon-arrow_3:before {
+    content: "\e902";
+    font-weight: 500;
+    background: transparent;
+  }
+  .holberton_school-icon-arrow_4:before {
+    content: "\e903";
+    font-weight: 500;
+  }
+
+  .holberton_school-icon-arrow_4 {
+    color: black;
+    background: none;
+    font-size: 6.2rem;
+  }
+
+  .holberton_school-icon-arrow_white {
+      color: white !important;
+  }
+
+  .holberton_school-icon-arrow_3 {
+    color: black;
+    background: none;
+    font-size: 6.2rem;
+  }
+  
+  .holberton_school-icon-ic_facebook:before {
+    content: "\e908";
+  }
+  
+  .holberton_school-icon-ic_twitter:before {
+    content: "\e90f";
+  }
+  
+  .holberton_school-icon-ic_instagram:before {
+    content: "\e90a";
+  }
+
+  .holberton_school-icon-check:before {
+    content: "\e905";
+    color: yellowgreen;
+    font-size: 2.8rem;
+  }
+
+  .holberton_school-icon-search_2:before {
+    content: "\e913";
+    font-size: 3rem;
+    color: white;
+  }
+
+.bg-dark1 {
+    background-color: #071629;
+}
+.mt-16 {
+    margin-top: 16rem;
+}
+
+.mt-8 {
+    margin-top: 8rem;
+}
+
+.mb-10 {
+    margin-bottom: 10rem;
+}
+.my-9 {
+    margin-top: 9rem;
+    margin-bottom: 6rem;
+}
+.pb-10 {
+    padding-bottom: 10rem;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+/* Navbar */
+
+nav .img-fav {
+    width: 3.7rem;
+    margin-bottom: 1rem;
+}
+
+nav .img-logo {
+    width: 11.4rem;
+}
+
+.link-list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    color: #b1976d !important;
+}
+
+.occupie {
+    width: 3.6rem;
+}
+
+@media screen and (min-width: 576px) {
+    .smile-icon-group {
+        flex-direction: row !important;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .link-list {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+.holberton_school-icon-menu:before {
+    content: "\e911";
+    font-size: 2rem;
+}
+
+  /* Header */
+
+.bg-header {
+    background: url(./images/pic_1.jpg) no-repeat;
+    background-position-x: center;
+    background-size: cover;
+}
+
+header h1 {
+    color: white;
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.header_p{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.encourage {
+    font-size: 3.2rem;
+    font-weight: 300;
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+}
+
+.purple_bold {
+    color: #C271ff;
+    font-weight: bold;
+}
+.purple {
+    color: #C271ff;
+    font-family: Coiny;
+}
+.profile-info {
+    font-size: 1.6rem;
+}
+
+.img-profile {
+    width: 15rem;
+}
+
+.img-profile + h3 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-top: 1rem;
+}
+
+header a {
+    line-height: 2rem;
+}
+
+header a:hover,
+header a:visited {
+    color: #C271ff !important;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #000;
+}
+
+@media screen and (min-width: 768px) {
+    header h1 {
+        font-size: 12rem;
+    }
+}
+
+/* Buttons */
+
+.btn-primary{
+    background-color:#C271ff;
+}
+.btn-primary:hover{
+    background-color:#C271ff;
+    opacity: 0.9;
+}
+
+.btn-primary > span {
+    font-size: 1.4rem;
+    padding-top: 1rem !important;
+}
+
+/* Carousel */
+
+.bg-carousel {
+    background-color: #C271ff;
+}
+
+.carousel-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-text {
+    font-size: 2.2rem;
+    color: white;
+}
+
+.carousel-img {
+    width: 14.8rem;
+    height: 14.8rem;
+}
+
+.control-button {
+    width: 30rem;
+    height: 5rem;
+}
+
+.carousel-control-prev {
+    bottom: 16rem;
+}
+
+.carousel-control-next {
+    bottom: 16rem;
+}
+
+.heading-in-carousel {
+    font-size: 3.2rem;
+    font-weight: 300;
+}
+@media screen and (min-width: 768px) {
+    .carousel-flex {
+        flex-direction: row;
+    }
+    .mt-8 {
+        margin-top: 2rem;
+    }
+    .lg-carousel-img {
+        justify-content: center;
+    }
+    .carousel-flex {
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+
+    .carousel-control-prev {
+        bottom: 3rem;
+    }
+    
+    .carousel-control-next {
+        bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .carousel-flex {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/* Cards */
+
+.popular-card {
+    width: 25.5rem;
+}
+
+.popular-card-img {
+    width: 25.5rem;
+
+}
+.popular-card-play {
+    width: 6.4rem;
+    height: auto;
+    position: absolute;
+    left: 95px;
+    top: 45px;
+    z-index: 1;
+}
+
+.popular-card-title {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+.popular-card-title + p {
+    color: gray;
+}
+.profile-small {
+    width: 3rem;
+    height: 3rem;
+}
+
+.star-size {
+    width: 1.5rem;
+}
+
+.profile-small + h5 {
+    font-size: 1.4rem;
+    color: #C271ff;
+}
+
+.card-body h5 {
+    color: #C271ff;
+}
+
+/* smile */
+
+.img-profile-smile {
+    width: 4.5rem;
+}
+
+.smile-content {
+    font-size: 1.4rem;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #071629;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .footer--image {
+    width: 16rem;
+    align-self: center;
+    margin-top: 3rem;
+  }
+  
+  .footer--social {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer--social .block--image {
+    color: white;
+    font-size: 3rem;
+    margin: 2rem 1rem;
+  }
+  
+  .footer--copyright {
+    font-size: 1.2rem;
+    color: gray;
+    margin-bottom: 5rem;
+  }
+  
+  @media screen and (min-width:486px) {
+    .footer {
+      background-color: black;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 10rem auto;
+    }
+  
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .footer--image {
+      margin-left: 3rem;
+    }
+  
+
+  
+    .footer--copyright {
+      width: 100%;
+      margin-top: 8rem;
+    }
+  
+  }
+
+  .footer-icon1 {
+      width: 3.7rem;
+      height: 3rem;
+  }
+
+  .footer-icon-2 {
+      width: 11.4rem;
+      height: 3.5rem;
+  }
+
+  /* pricing page */
+
+  .bg-pricing-header {
+    background: url(./images/pic_2.jpg) no-repeat;
+
+
+    background-position: center;
+    background-size: cover;
+  }
+
+  .pricing-question p {
+      color: white;
+      font-size: 2.4rem;
+  }
+
+  .pricing-question .img-smile {
+    width: 3rem;
+    height: 2.4rem;
+  }
+  .pricing-question .img-logo {
+      width: 16rem;
+  }
+
+  .plan-block {
+      max-width: 18rem;
+  }
+
+  .plan-block .price {
+      color: white;
+      font-weight: bold;
+      font-size: 4.4rem;
+      line-height: 120%;
+  }
+
+  .plan-block .price_per_month {
+      color: white;
+      opacity: 50%;
+      font-size: 1.2rem;
+
+  }
+
+  .second-row p {
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+  }
+
+  .third-row p {
+      font-size: 1.8rem;
+  }
+
+  .table {
+      max-width: 1110px;
+  }
+
+  .signal {
+      width: 8.8rem;
+      height: 3.5rem;
+  }
+
+  /* FAQ */
+
+  .faq h1 {
+      font-size: 6rem;
+      font-weight: 300;
+      padding-top: 7.4rem;
+  }
+
+@media screen and (min-width: 976px) {
+    
+    .move-margin {
+        margin-top: -3rem;
+    }
+}
+
+.faq-question .p1{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.faq-question .p2 {
+    font-size: 1.4rem;
+}
+
+/* Courses */
+
+.course-header-heading {
+    font-family: Coiny, Arial, Helvetica, sans-serif;
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+.bg-forms {
+    background-color: #C271ff;
+}
+
+.dropdown-menu {
+    width: 100% !important;
+}
+
+.dropdown-div {
+    margin-right: none;
+    padding-left: 0.75rem;
+    background-color: #d195ff;
+    border: none;
+}
+.dropdown-div:hover,
+.dropdown-div:hover::after,
+.dropdown-div:visited,
+.dropdown-div:active,
+.dropdown-div:focus{
+    margin-right: none;
+    background-color: #d195ff;
+    border: none;
+}
+
+.dropdown-div span {
+    font-size: 2.3rem;
+    padding-right: 0.75rem;
+}
+
+.form-group input {
+    font-size: 2.3rem;
+    color: white;
+}
+
+.drop-whole {
+    padding-left: 0.75rem;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.pl-search {
+    padding-left: 0;
+    padding-right: 0.75rem;
+}
+
+.form-group label {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.drop-left {
+    padding-left: 0px;
+}
+.search-icon {
+    background-color: #d195ff;
+}
+@media screen and (min-width: 576px) {
+    .pl-search {
+        padding-right: 0.75rem;
+    }
+    .drop-left{
+        padding-right: 0;
+    }
+}
+
+
+.course-heading5 {
+    font-size: 1.6rem;
+    opacity: 0.3;
+}
