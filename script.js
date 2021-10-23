@@ -1,41 +1,25 @@
-$(document).ready(function () {
-    //   Quotes ===============================================================
-  
-    /**
-     * Creates a carousel item and appends it to the DOM
-     * @data  {Array} List of data to be displayed as Quotes
-     * @return {undefined}  No return
-     */
-    function displayQuotes(data) {
-      let classItem = "";
-      for (let i in data) {
-        classItem = i == 0 ? "carousel-item active" : "carousel-item";
-        let $carouselItem = $(`
-          <blockquote class="${classItem}">
-          <div class="row mx-auto align-items-center">
-              <div class="col-12 col-sm-2 col-lg-2 offset-lg-1 text-center">
-              <img
-                  src="${data[i].pic_url}"
-                  class="d-block align-self-center"
-                  alt="Carousel Pic ${i}"
-              />
-              </div>
-              <div class="col-12 col-sm-7 offset-sm-2 col-lg-9 offset-lg-0">
-              <div class="quote-text">
-                  <p class="text-white pr-md-4 pr-lg-5">
-                  ${data[i].text}
-                  </p>
-                  <h4 class="text-white font-weight-bold">${data[i].name}</h4>
-                  <span class="text-white">${data[i].title}</span>
-              </div>
-              </div>
-          </div>
-          </blockquote>;
-      `);
-  
-        $("#carousel-items").append($carouselItem);
+window.onload = function() {
+  // 1. Homepage - quotes
+  $.ajax({
+      url: "https://smileschool-api.hbtn.info/quotes",
+      type: "GET",
+      success: function(response) {
+          $("#loader").remove();
+          response.forEach(function(quote, index) {
+                  let quoteHtml = `
+                      <div class="carousel-item ${index === 0 ? "active" : ""} h-100">
+                          <div class="carousel-card container text-white d-flex h-100 justify-content-center align-items-center d-flex flex-sm-row flex-column mt-5 mb-5">
+                              <img class="rounded-circle" src="${quote.pic_url}"  alt="First slide" style="width: 160px; height: 160px;">
+                              <div class="col-6" style="min-width: 200px;">
+                                  <p>${quote.text}</p>
+                                  <p class="font-weight-bold">${quote.name}</p>
+                                  <p class="font-italic">${quote.title}</p>
+                              </div>
+                          </div>
+                      </div>
+                  `;
+                  $("#quotes").append(quoteHtml)
+          });
       }
-  
-      // END OF displayQuotes
-    }
-})
+  })
+}
