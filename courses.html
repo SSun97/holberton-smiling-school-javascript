@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- HOMEPAGE CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <title>SmileSchool</title>
+</head>
+<body>
+    <header class="bg-pricing-header mb-0">
+        <nav class="navbar navbar-expand-sm navbar-light bg-transparent row justify-content-between text-nowrap mt-5">
+            <div class="container-fluid d-flex flex-row ml-5">
+
+              <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="holberton_school-icon-menu text-light"></span>
+              </button>
+              <div class="d-flex flex-column smile-icon-group m-5">
+                <a href="homepage.html"><img class="img-fav mx-auto mt-3" src="images/smile_off.png" alt="web-icon"></a>
+                <img class="img-logo mx-3" src="images/logo.png" alt="">
+                </div>
+              <div class="occupie d-sm-none"></div>
+              <div class="collapse navbar-collapse link-list" id="navbarTogglerDemo02">
+                <div class="d-flex">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+                        <li class="nav-item my-auto m-3">
+                          <a class="nav-link active text-light font-weight-bold" aria-current="page" href="courses.html">COURSE</a>
+                        </li>
+                        <li class="nav-item m-3">
+                          <a class="nav-link active text-light font-weight-bold" href="pricing.html">PRICING</a>
+                        </li>
+                        <li class="nav-item m-3 mr-5">
+                          <a class="nav-link active text-light font-weight-bold">LOGIN</a>
+                        </li>
+                      </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+        <h1 class="course-header-heading d-none d-lg-block">« Don’t cry because it’s over.</h1>
+        <h1 class="course-header-heading pb-5 mb-0 d-none d-lg-block"><span class="purple">Smile</span> because it happened. »</h1>
+
+
+
+    </header>
+    <main>
+        <section class="container-fluid p-5" style="background-color: #C271FF;" id="search-form">
+            <div class="row container-fluid d-flex justify-content-around align-items-center text-white">
+                <div class="form-group col-md-4 col-sm-12 col-12 border-0" style="background-color: #C271FF; opacity: .5;">
+                    <label for="search" class="text-uppercase font-weight-bold">Keywords</label>
+                    <input class="form-control rounded-0 text-black" type="search"
+                        placeholder="&#x1F50D; Search by keywords" aria-label="Search" id="search">
+                </div>
+                <div class="form-group col-md-4 col-sm-6 col-12 border-0" style="background-color: #C271FF; opacity: .5;">
+                    <label for="topic" class="text-uppercase font-weight-bold">Topic</label>
+                    <select class="form-control rounded-0" id="topic">
+                    </select>
+                </div>
+                <div class="form-group col-md-4 col-sm-6 col-12 border-0" style="background-color: #C271FF; opacity: .5;">
+                    <label for="sort" class="text-uppercase font-weight-bold">Most Popular</label>
+                    <select class="form-control rounded-0" id="sort">
+                    </select>
+                  </div>
+            </div>
+        </section>
+        <section class="container p-5">
+            <div class="videos-content justify-content-center align-items-center d-flex flex-wrap" id="courses">
+            </div>
+        </section>
+    </main>
+    <footer class="footer container d-flex flex-column flex-sm-row justify-content-center justify-content-md-between p-5 my-0">
+        <div class="d-flex flex-row smile-icon-group m-3 align-items-baseline justify-content-center">
+            <img class="img-fav mt-3 footer-icon1" src="images/smile_off.png" alt="web-icon">
+            <img class="img-logo mx-3 footer-icon-2" src="images/logo.png" alt="">
+            </div>
+        <div class="footer--social">
+            <span class="holberton_school-icon-ic_facebook block--image"></span>
+            <span class="holberton_school-icon-ic_twitter block--image"></span>
+            <span class="holberton_school-icon-ic_instagram block--image"></span>
+        </div>
+        <h3 class="footer--copyright">©smileschool 2020</h3>
+
+    </footer>
+    <script type="application/javascript">
+        window.onload = function() {
+            $.ajax({
+                url: "https://smileschool-api.hbtn.info/courses",
+                type: "GET",
+                success: function(response) {
+                    // GET TOPICS
+                    response.topics.forEach(function(topicItem, topicIndex) {
+                        let topicOption = `
+                            <option ${topicIndex === 0 ? "selected" : ""}>${topicItem.replace(/\b\w/g, l => l.toUpperCase())}</option>
+                        `;
+                        $("#topic").append(topicOption);
+                    });
+                    // GET SORTINGS
+                    response.sorts.forEach(function(sortItem, sortIndex) {
+                        let sortOption = `
+                            <option ${sortIndex === 0 ? "selected" : ""} value="sortItem">${sortItem.replace("_", " ").replace(/\b\w/g, l => l.toUpperCase())}</option>
+                        `;
+                        $("#sort").append(sortOption);
+                    });
+                    seachVideos($("#search").val(), $("#topic").val(), $("#sort").val());
+                }
+            });
+            function seachVideos(q, topic, sort) {
+                $("#courses").html("");
+                $("#courses").append(`
+                    <div class="loader" id="loader"></div>
+                `)
+                $.ajax({
+                    url: `https://smileschool-api.hbtn.info/courses?q=${q}&topic=${topic}&sort=${sort}`,
+                    success: function(response) {
+                        response.courses.forEach(function(quote, index) {
+                            $("#loader").remove();
+                            let quoteHtml = `
+                                <div class="card m-5" style="width: 16rem;">
+                                    <div class=" d-flex align-items-center justify-content-center">
+                                    <img src="${quote.thumb_url}" alt="" class="card-img-top">
+                                    <img src="./images/play.png" alt="" class="position-absolute" style="width: 50px; height: 50px;">
+                                    </div>
+                                    <div class="card-body">
+                                    <h5 class="card-title font-weight-bold text-left">${quote.title}</h5>
+                                    <p class="card-text text-muted text-left">${quote['sub-title']}</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="mr-3">
+                                        <img src="${quote.author_pic_url}" alt="" class="rounded-circle" style="width: 30px; height: 30px;">
+                                        </div>
+                                        <div class="carousel__user color-pink">
+                                        ${quote.author}
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-3 align-items-center">
+                                        <img src="./images/star_on.png" alt="" class="star" style="height: 20px; width: 20px;">
+                                        <img src="./images/star_on.png" alt="" class="star" style="height: 20px; width: 20px;">
+                                        <img src="./images/star_on.png" alt="" class="star" style="height: 20px; width: 20px;">
+                                        <img src="./images/star_on.png" alt="" class="star" style="height: 20px; width: 20px;">
+                                        <img src="./images/star_off.png" alt="" class="star" style="height: 20px; width: 20px;">
+                                        <div class="color-pink carousel-time">${quote.duration}</div>
+                                    </div>
+                                    </div>
+                                </div>
+                            `;
+                            $(`#courses`).append(quoteHtml)
+                        })
+                    }
+                })
+            }
+            $("#search-form").change(function() {
+                seachVideos($("#search").val(), $("#topic").val(), $("#sort").val());
+            });
+        }
+    </script>
+</body>
+</html>
